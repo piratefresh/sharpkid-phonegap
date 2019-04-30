@@ -1,0 +1,172 @@
+body {
+  background: #6374f4;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100vh;
+  align-items: center;
+  justify-items: center;
+}
+
+.center-obj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: [left-side] 1fr [right-side] 1fr;
+  width: 60vw;
+  height: 60vh;
+  margin: 0 auto;
+}
+
+.left-side {
+  position: relative;
+  grid: left-side;
+  display: grid;
+  height: 100%;
+}
+
+.overlay-img {
+  position: absolute;
+  height: 70%;
+  width: 70%;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.right-side {
+  grid: right-side;
+  height: 100%;
+  background: #fff;
+  display: flex;
+
+  flex-direction: column;
+}
+
+.right-side h1 {
+  margin: 2rem;
+}
+
+.right-side p {
+  margin: 0 2rem;
+}
+
+label {
+  color: #6273f5;
+}
+
+.primary-button {
+  background: #de508c;
+}
+
+.primary-button:hover {
+  background: #b53e70;
+}
+
+.secondary-button {
+  background: #6273f5;
+}
+
+.secondary-button:hover {
+  background: #5967d2;
+}
+
+.account-links {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  color: #6273f5;
+}
+
+.account-links a {
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.account-links a:visited {
+  color: #6273f5;
+}
+
+.block {
+  height: 100%;
+}
+
+.yellow-block {
+  background: #fcc32a;
+}
+.purple-block {
+  background: #6374f4;
+}
+.green-block {
+  background: #c8deae;
+}
+.red-block {
+  background: #de508c;
+}
+
+/* NAV */
+
+nav {
+  display: flex;
+  background: #6273f5;
+  color: #fff;
+  text-decoration: none;
+  height: 10vh;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+nav li {
+  list-style: none;
+}
+
+/* Menu */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.container h1 {
+}
+.title-container {
+  padding: 2rem;
+}
+
+.menu-container {
+  height: 100%;
+  color: #fff;
+}
+
+.menu-container h2 {
+}
+
+.menu-block {
+  height: 15vh;
+  margin: 1rem 0;
+  border-radius: 20px;
+}
+
+.menu-block:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.fact-container {
+  margin-top: 5%;
+  padding: 2rem;
+  background: #fcc32a;
+  border-radius: 20px;
+}
