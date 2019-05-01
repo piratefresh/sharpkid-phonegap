@@ -5,15 +5,32 @@ let SignUpButton = document.querySelectorAll(".SignUpButton");
 
 $(function() {
   /* Clear Messages */
-  SignUpForm.style.display = "none";
-  SignUpButtonInit();
+  $(".LoginForm").show();
+  $(".SignUpForm").hide();
+  $(".ForgotPasswordForm").hide();
+  LoginButtonInit();
+  SignUpInit();
+  ForgotPasswordInit();
 });
 
-function SignUpButtonInit() {
-  console.log(SignUpButton);
-  SignUpButton.addEventListener("click", () => {
-    SignUpForm.style.display = "display";
-    Login.style.display = "none";
-    console.log("hello");
+function SignUpInit() {
+  $(".SignUpButton").click(() => {
+    $(".LoginForm").hide();
+    $(".SignUpForm").show();
+  });
+}
+
+function LoginButtonInit() {
+  $(".LoginButton").click(function() {
+    $(".SignUpForm").hide();
+    $(".LoginForm").show();
+  });
+}
+
+function ForgotPasswordInit() {
+  $(".ForgotPasswordButton").click(function() {
+    $(".SignUpForm").hide();
+    $(".LoginForm").hide();
+    $(".ForgotPasswordForm").show();
   });
 }

@@ -15,19 +15,20 @@
     <div class="wrapper">
       <div class="container">
         <div class="left-side">
-          <img src="./images/sign-up-4.png" class="overlay-img"></img>
+          <img src="./images/sign-up-4.png" class="overlay-img" />
           <div class="block yellow-block"></div>
           <div class="block purple-block"></div>
           <div class="block green-block"></div>
           <div class="block red-block"></div>
         </div>
-        
+
         <div class="right-side">
           <h1>SharpKid</h1>
           <!-- Sign up Form -->
           <div class="SignUpForm">
             <p>Sign up for SharpKid</p>
             <form class="rounded px-8 pt-6 pb-8 mb-4" action="">
+              <!-- Username Input -->
               <div class="mb-4">
                 <label
                   class="block text-grey-darker text-sm font-bold mb-2"
@@ -37,12 +38,141 @@
                 </label>
                 <input
                   class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
-                  id="username"
-                  name="username"
+                  id="SignUpUsername"
+                  name="SignUpUsername"
                   type="text"
                 />
               </div>
+              <!-- Email Input -->
+              <div class="mb-6">
+                <label
+                  class="block text-grey-darker text-sm font-bold mb-2"
+                  for="email"
+                >
+                  Email
+                </label>
+                <input
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
+                  id="SignUpEmail"
+                  name="SignUpEmail"
+                  type="email"
+                  placeholder=""
+                />
+              </div>
+              <!-- Password Input -->
+              <div class="mb-6">
+                <label
+                  class="block text-grey-darker text-sm font-bold mb-2"
+                  for="password"
+                >
+                  Password
+                </label>
+                <input
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
+                  id="SignUpPassword"
+                  name="SignUpPassword"
+                  type="password"
+                  placeholder=""
+                />
+              </div>
+              <!-- Password Input -->
+              <div class="mb-6">
+                <label
+                  class="block text-grey-darker text-sm font-bold mb-2"
+                  for="password"
+                >
+                  Confirm Password
+                </label>
+                <input
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
+                  id="ConfirmPassword"
+                  name="ConfirmPassword"
+                  type="password"
+                  placeholder=""
+                />
+              </div>
 
+              <div class="account-links">
+                <button onclick="return false;" class="ForgotPasswordButton">
+                  Forgot Password?
+                </button>
+              </div>
+              <button
+                onclick="return false;"
+                class="primary-button text-white font-bold py-2 px-4 rounded LoginButton"
+              >
+                Login
+              </button>
+              <button
+                type="submit"
+                class="secondary-button text-white font-bold py-2 px-4 rounded SignUpButton"
+              >
+                Sign Up
+              </button>
+            </form>
+          </div>
+
+          <!-- Login Form -->
+          <div class="LoginForm">
+            <p>Login for SharpKid</p>
+            <form class="rounded px-8 pt-6 pb-8 mb-4" action="">
+              <!-- Email Input -->
+              <div class="mb-6">
+                <label
+                  class="block text-grey-darker text-sm font-bold mb-2"
+                  for="email"
+                >
+                  Email
+                </label>
+                <input
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
+                  id="LoginEmail"
+                  name="LoginEmail"
+                  type="email"
+                  placeholder=""
+                />
+              </div>
+              <!-- Password Input -->
+              <div class="mb-6">
+                <label
+                  class="block text-grey-darker text-sm font-bold mb-2"
+                  for="password"
+                >
+                  Password
+                </label>
+                <input
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
+                  id="SignUpPassword"
+                  name="SignUpPassword"
+                  type="password"
+                  placeholder=""
+                />
+              </div>
+              <div class="account-links">
+                <button onclick="return false;" class="ForgotPasswordButton">
+                  Forgot Password?
+                </button>
+              </div>
+
+              <button
+                onclick="return false;"
+                class="secondary-button text-white font-bold py-2 px-4 rounded SignUpButton"
+              >
+                Sign Up
+              </button>
+              <button
+                type="submit"
+                class="primary-button text-white font-bold py-2 px-4 rounded LoginButton"
+              >
+                Login
+              </button>
+            </form>
+          </div>
+
+          <!-- Forgot Password Form -->
+          <div class="ForgotPasswordForm">
+            <p>Forgot password</p>
+            <form class="rounded px-8 pt-6 pb-8 mb-4" action="">
               <div class="mb-6">
                 <label
                   class="block text-grey-darker text-sm font-bold mb-2"
@@ -58,86 +188,23 @@
                   placeholder=""
                 />
               </div>
-              <div class="account-links">
-                <a href="">Forgot Password?</a>
-                <a href="">Reset Password</a>
-              </div>
-
               <button
-              type="submit"
-                class="secondary-button text-white font-bold py-2 px-4 rounded SignUpButton"
-              >
-              Sign Up
-              </button>
-              <div
+                type="submit"
                 class="primary-button text-white font-bold py-2 px-4 rounded LoginButton"
               >
-              Login
-            </div>
+                Confirm
+              </button>
             </form>
           </div>
-
-          <!-- Login Form -->
-          <div class="LoginForm">
-              <p>Login for SharpKid</p>
-              <form class="rounded px-8 pt-6 pb-8 mb-4" action="">
-                <div class="mb-4">
-                  <label
-                    class="block text-grey-darker text-sm font-bold mb-2"
-                    for="username"
-                  >
-                    Username
-                  </label>
-                  <input
-                    class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
-                    id="username"
-                    name="username"
-                    type="text"
-                  />
-                </div>
-  
-                <div class="mb-6">
-                  <label
-                    class="block text-grey-darker text-sm font-bold mb-2"
-                    for="email"
-                  >
-                    Email
-                  </label>
-                  <input
-                    class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
-                    id="email"
-                    name="email"
-                    type="email"
-                    placeholder=""
-                  />
-                </div>
-                <div class="account-links">
-                  <a href="">Forgot Password?</a>
-                  <a href="">Reset Password</a>
-                </div>
-  
-                <div
-                  class="secondary-button text-white font-bold py-2 px-4 rounded SignUpButton"
-                >
-                Sign Up
-              </div>
-                <button type="submit"
-                  class="primary-button text-white font-bold py-2 px-4 rounded LoginButton"
-                >
-                Login
-                </button>
-              </form>
-            </div>
-
         </div>
       </div>
     </div>
 
     <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"
-></script>
-<script src="./js/indexfuncs.js"></script>
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/indexfuncs.js"></script>
   </body>
 </html>
