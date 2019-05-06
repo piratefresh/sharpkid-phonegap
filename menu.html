@@ -12,29 +12,55 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body style="background: #fff">
-    <nav>
+    <div class="alertMessage"></div>
+    <nav class="main-nav">
       <ul>
-        <li>Game</li>
-        <li>About Us</li>
-        <li>User11122</li>
+        <li>
+          <a href="http://">Game</a>
+        </li>
+        <li>
+          <a href="http://">About Us</a>
+        </li>
+        <li>
+          <a class="account-link" href="http://"></a>
+        </li>
+        <li>
+          <a class="logout-link" href="http://"></a>
+        </li>
       </ul>
     </nav>
-    <div class="container">
+    <div class="parent-menu-container">
       <div class="title-container">
         <h1 class="center-obj">Choose a Category</h1>
       </div>
       <div class="menu-container">
         <div class="menu-block yellow-block center-obj">
-          <h2 class="">Science and Nature</h2>
+          <h2 class="">
+            <a href="quiz.html?category=17">
+              Science and Nature
+            </a>
+          </h2>
         </div>
         <div class="menu-block purple-block center-obj">
-          <h2 class="">Entertainment</h2>
+          <h2>
+            <a href="quiz.html?category=9">
+              General Knowledge
+            </a>
+          </h2>
         </div>
         <div class="menu-block green-block center-obj">
-          <h2 class="">World History</h2>
+          <h2>
+            <a href="quiz.html?category=23">
+              World History
+            </a>
+          </h2>
         </div>
         <div class="menu-block red-block center-obj">
-          <h2 class="">Geography</h2>
+          <h2>
+            <a href="quiz.html?category=22">
+              Geography
+            </a>
+          </h2>
         </div>
       </div>
 
@@ -43,5 +69,12 @@
         <p class="center-obj">Superman ain't Superman</p>
       </div>
     </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/getuserdata.js"></script>
+    <script src="js/sharpkid.js"></script>
   </body>
 </html>

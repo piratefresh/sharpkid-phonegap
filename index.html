@@ -9,6 +9,7 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -23,11 +24,16 @@
         </div>
 
         <div class="right-side">
+          <div class="alertMessage"></div>
           <h1>SharpKid</h1>
           <!-- Sign up Form -->
           <div class="SignUpForm">
             <p>Sign up for SharpKid</p>
-            <form class="rounded px-8 pt-6 pb-8 mb-4" action="">
+            <form
+              class="rounded px-8 pt-6 pb-8 mb-4"
+              action="php/registration_controller.php"
+              method="get"
+            >
               <!-- Username Input -->
               <div class="mb-4">
                 <label
@@ -59,39 +65,6 @@
                   placeholder=""
                 />
               </div>
-              <!-- Password Input -->
-              <div class="mb-6">
-                <label
-                  class="block text-grey-darker text-sm font-bold mb-2"
-                  for="password"
-                >
-                  Password
-                </label>
-                <input
-                  class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
-                  id="SignUpPassword"
-                  name="SignUpPassword"
-                  type="password"
-                  placeholder=""
-                />
-              </div>
-              <!-- Password Input -->
-              <div class="mb-6">
-                <label
-                  class="block text-grey-darker text-sm font-bold mb-2"
-                  for="password"
-                >
-                  Confirm Password
-                </label>
-                <input
-                  class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
-                  id="ConfirmPassword"
-                  name="ConfirmPassword"
-                  type="password"
-                  placeholder=""
-                />
-              </div>
-
               <div class="account-links">
                 <button onclick="return false;" class="ForgotPasswordButton">
                   Forgot Password?
@@ -115,7 +88,12 @@
           <!-- Login Form -->
           <div class="LoginForm">
             <p>Login for SharpKid</p>
-            <form class="rounded px-8 pt-6 pb-8 mb-4" action="">
+            <form
+              class="rounded px-8 pt-6 pb-8 mb-4"
+              action="php/login_controller.php"
+              method="post"
+              enctype="multipart/form-data"
+            >
               <!-- Email Input -->
               <div class="mb-6">
                 <label
@@ -142,8 +120,8 @@
                 </label>
                 <input
                   class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
-                  id="SignUpPassword"
-                  name="SignUpPassword"
+                  id="LoginPassword"
+                  name="LoginPassword"
                   type="password"
                   placeholder=""
                 />
@@ -172,18 +150,22 @@
           <!-- Forgot Password Form -->
           <div class="ForgotPasswordForm">
             <p>Forgot password</p>
-            <form class="rounded px-8 pt-6 pb-8 mb-4" action="">
+            <form
+              class="rounded px-8 pt-6 pb-8 mb-4"
+              action="http://cis-linux2.temple.edu/~tug36870/2305/sharpkid/php/forgot_password_controller.php"
+              method="get"
+            >
               <div class="mb-6">
                 <label
                   class="block text-grey-darker text-sm font-bold mb-2"
-                  for="email"
+                  for="Reset email"
                 >
                   Email
                 </label>
                 <input
                   class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
-                  id="email"
-                  name="email"
+                  id="ResetEmail"
+                  name="ResetEmail"
                   type="email"
                   placeholder=""
                 />
@@ -192,7 +174,7 @@
                 type="submit"
                 class="primary-button text-white font-bold py-2 px-4 rounded LoginButton"
               >
-                Confirm
+                Reset Email
               </button>
             </form>
           </div>
@@ -205,6 +187,6 @@
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
       crossorigin="anonymous"
     ></script>
-    <script src="./js/indexfuncs.js"></script>
+    <script src="./js/sharpkid.js"></script>
   </body>
 </html>
