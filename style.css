@@ -218,6 +218,8 @@ a {
 #fact_box {
   padding: 0 5px;
   font-family: "Catamaran", sans-serif;
+  color: #fff;
+  font-size: 2rem;
 }
 
 #fact_box:hover {
@@ -353,6 +355,34 @@ a {
 }
 /*Quiz Page*/
 
+/* End Page */
+.end-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+#endForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#finalScore {
+  text-align: center;
+}
+#endForm form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#endForm form input {
+  margin: 5% 0;
+}
+
+#endForm a {
+  margin-top: 5%;
+}
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 300px) and (max-width: 767px) {

@@ -14,8 +14,8 @@ function readUserData() {
     encode: true
   }).always(data => {
     console.log(data);
-    UserName = `${data.username.toString()}`;
     if (data.hasOwnProperty("username")) {
+      UserName = `${data.username.toString()}`;
       const LogoutMarkUp = `
           <li>
             <a href="http://cis-linux2.temple.edu/~tug36870/2305/sharpkid/php/logout_controller.php">Logout</a>
@@ -24,11 +24,32 @@ function readUserData() {
        `;
       const UserMarkUp = `
        <li>
-       <a href="">${UserName}</a>
+       <a href="./user?Username=${UserName}">${UserName}</a>
      </li>
        `;
       $(".account-link").html(UserMarkUp);
       $(".logout-link").html(LogoutMarkUp);
+      if (
+        window.location.href ==
+        `http://cis-linux2.temple.edu/~tug36870/2305/sharpkid/user?Username=${UserName}`
+      ) {
+        $(".user-title").text(`Welcome ${UserName}`);
+        const UserSectionMarkUp = `
+          <p>Email: ${data.email.toString()}
+        `;
+        $(".user-section").html(UserSectionMarkUp);
+      }
+      if (
+        window.location.href ==
+        "http://cis-linux2.temple.edu/~tug36870/2305/sharpkid/end.html"
+      ) {
+        document.getElementById(
+          "inputUsernameScore"
+        ).value = data.username.toString();
+      }
+    } else {
+      window.location.href =
+        "http://cis-linux2.temple.edu/~tug36870/2305/sharpkid/";
     }
     return data;
   });

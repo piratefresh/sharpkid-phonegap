@@ -43,7 +43,7 @@ function readRegState() {
     type: "GET",
     crossOrigin: true,
     url:
-      "http://cis-linux2.temple.edu/~tug36870/2305/ajaxlab/php/readRegState.php",
+      "http://cis-linux2.temple.edu/~tug36870/2305/sharpkid/php/readRegState.php",
     async: false,
     dataType: "json",
     encode: true
@@ -60,7 +60,7 @@ function readMessage() {
     type: "GET",
     crossOrigin: true,
     url:
-      "http://cis-linux2.temple.edu/~tug36870/2305/ajaxlab/php/readMessage.php",
+      "http://cis-linux2.temple.edu/~tug36870/2305/sharpkid/php/readMessage.php",
     async: false,
     dataType: "json",
     encode: true

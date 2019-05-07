@@ -5,14 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Congrats</title>
+    <link href="./tailwind.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="container">
-      <div id="id">
+  <body style="background-color: #fff">
+    <nav>
+      <ul id="links">
+        <li class="nav-item">
+          <a class="nav-link" href="/menu.html">Exit To Home</a>
+        </li>
+        <li>
+          <a class="account-link" href="http://"></a>
+        </li>
+        <li>
+          <a class="logout-link" href="http://"></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="end-container">
+      <div id="endForm">
         <h1 id="finalScore">0</h1>
         <form action="">
-          <input type="text" class="username" />
+          <input
+            type="text"
+            class="username shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
+            id="inputUsernameScore"
+            disabled
+          />
           <button
             type="submit"
             class="primary-button text-white font-bold py-2 px-4 rounded"
@@ -25,7 +44,8 @@
         <a href="/menu.html">Back to Menu</a>
       </div>
     </div>
-
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/getuserdata.js"></script>
     <script src="js/end.js"></script>
   </body>
 </html>
