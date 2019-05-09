@@ -29,20 +29,6 @@ function readUserData() {
        `;
       $(".account-link").html(UserMarkUp);
       $(".logout-link").html(LogoutMarkUp);
-      if (window.location.href == `./user?Username=${UserName}`) {
-        $(".user-title").text(`Welcome ${UserName}`);
-        const UserSectionMarkUp = `
-          <p>Email: ${data.email.toString()}
-        `;
-        $(".user-section").html(UserSectionMarkUp);
-      }
-      if (window.location.href == "./end.html") {
-        document.getElementById(
-          "inputUsernameScore"
-        ).value = data.username.toString();
-      }
-    } else {
-      window.location.href = "./index.html";
     }
     return data;
   });
