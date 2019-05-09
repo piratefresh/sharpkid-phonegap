@@ -20,12 +20,24 @@ function SignUpInit() {
     $(".LoginForm").hide();
     $(".SignUpForm").show();
   });
+  $(".SignUpButton").keydown(function(event) {
+    if (event.keyCode == 13) {
+      event.preventDefault();
+      return false;
+    }
+  });
 }
 
 function LoginButtonInit() {
   $(".LoginButton").click(function() {
     $(".SignUpForm").hide();
     $(".LoginForm").show();
+  });
+  $(".LoginButton").keydown(function(event) {
+    if (event.keyCode == 13) {
+      event.preventDefault();
+      return false;
+    }
   });
 }
 
