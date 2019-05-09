@@ -27,7 +27,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: [left-side] 1fr [right-side] 1fr;
+  grid-template-columns: [right-side] 1fr;
   width: 50%;
   height: 60%;
   margin: 0 auto;
