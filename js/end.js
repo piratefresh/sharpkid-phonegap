@@ -4,7 +4,7 @@ const mostRecentScore = typeof (
   localStorage.getItem(mostRecentScore) !== "undefined"
 )
   ? localStorage.getItem(mostRecentScore)
-  : storage.getItem(key);
+  : storage.getItem(mostRecentScore);
 
 finalScore.innerText = mostRecentScore;
 highScores = localStorage.JSON.parse(localStorage.getItem("highScores")) || [];
