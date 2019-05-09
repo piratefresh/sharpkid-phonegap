@@ -70,6 +70,8 @@ document.addEventListener(
 
 getNewQuestion = () => {
   if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+    let storage = window.localStorage;
+    storage.setItem("mostRecentScore", score);
     localStorage.setItem("mostRecentScore", score);
     //go to the end page
     return window.location.assign("./end.html");
