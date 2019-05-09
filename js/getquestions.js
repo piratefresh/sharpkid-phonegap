@@ -55,14 +55,18 @@ fetch(
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 3;
 
-startGame = () => {
-  questionCounter = 0;
-  score1 = 0;
-  availableQuesions = [...questions];
-  getNewQuestion();
-  game.classList.remove("hidden");
-  loader.classList.add("hidden");
-};
+document.addEventListener(
+  "DOMContentLoaded",
+  function() {
+    startGame = () => {
+      questionCounter = 0;
+      score1 = 0;
+      availableQuesions = [...questions];
+      getNewQuestion();
+    };
+  },
+  false
+);
 
 getNewQuestion = () => {
   if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
