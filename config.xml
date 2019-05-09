@@ -19,7 +19,7 @@
 <allow-intent href="mailto:*" />  
 <allow-intent href="geo:*" />  
 <!-- Allow links to example.com -->  
-<allow-navigation href="http://cis-linux2.temple.edu/*" />  
+<allow-navigation href="http://cis-linux2.temple.edu/~tug36870/2305/sharpkid/*" />  
 <!-- Wildcards are allowed for the protocol, as a prefix     to 
 the host, or as a suffix to the path -->  
 <allow-navigation href="*://*.temple.edu/*" />  
