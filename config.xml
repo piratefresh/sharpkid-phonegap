@@ -10,7 +10,8 @@
 <author href="https://cis.temple.edu/~tug36870/" email="tug36870@temple.edu">Kazmuir, Sierra, Juwan, Magnus </author>  
 <content src="index.html" />  
 <plugin name="cordova-plugin-whitelist" spec="1.3.3" />  
-<access origin="*" />  
+<access origin="*" /> 
+<access origin="*.opentdb.com" /> 
 <allow-intent href="http://*/*" />  
 <allow-intent href="https://*/*" />  
 <allow-intent href="tel:*" />  
