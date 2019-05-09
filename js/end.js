@@ -1,10 +1,6 @@
 const finalScore = document.getElementById("finalScore");
 let storage = window.localStorage;
-const mostRecentScore = typeof (
-  localStorage.getItem(mostRecentScore) !== "undefined"
-)
-  ? localStorage.getItem(mostRecentScore)
-  : storage.getItem(mostRecentScore);
+const mostRecentScore = storage.getItem(mostRecentScore);
 
 finalScore.innerText = mostRecentScore;
 highScores = localStorage.JSON.parse(localStorage.getItem("highScores")) || [];
